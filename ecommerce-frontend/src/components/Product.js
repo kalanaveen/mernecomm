@@ -13,8 +13,8 @@ const Product = ({ product }) => {
       <Card.Body>
         <Link to={`/product/${product.slug}`}>
           <Card.Title>{product.name}</Card.Title>
-              </Link>
-              <Rating rating={product.rating} numReviews={ product.numReviews} />
+        </Link>
+        <Rating rating={product.rating} numReviews={product.numReviews} />
         <Card.Text>Rs{product.price}</Card.Text>
         <Button>Add To Cart</Button>
       </Card.Body>
